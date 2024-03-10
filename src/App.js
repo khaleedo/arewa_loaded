@@ -2,12 +2,17 @@
 
 import './App.css';
 import Header from './Header';
+import Nav from './Nav';
+import Results from './Results';
 
 function App() {
   return (
-    <div className="App">
-      <h1>AREWA LOADED</h1>
+    <div className="app">
+      
       <Header/>
+      <Nav />
+      <Results/>
+      
     </div>
   );
 }
