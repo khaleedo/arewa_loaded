@@ -1,13 +1,16 @@
 import React from 'react';
 import './VideoCard.css';
-import img1 from './images/AREWA LOADED.png';
+import img2 from './images/IMG_5898.JPG';
+
+const base_url = "https://image.tmdb.org/t/p/original/";
 
 function VideoCard({ movie }) {
   return (
     <div className='videoCard'>
-      <img src={img1} alt={movie.title} />
-      <h2>{movie.title}</h2>
-      {/* Other movie-related content */}
+      <img src={`${base_url}${movie.backdrop_path}`}alt='A' />
+      <h2>MOVIE title</h2>
+      <p>no. of likes</p>
+      
     </div>
   );
 }
